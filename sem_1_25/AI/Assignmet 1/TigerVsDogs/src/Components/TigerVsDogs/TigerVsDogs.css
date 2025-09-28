@@ -1,0 +1,197 @@
+/* src/Components/TigerVsDogs/TigerVsDogs.css */
+
+.container {
+    text-align: center;
+  }
+  
+  .title {
+    margin-top: 50px;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title span {
+    color: #26ffcb;
+    padding-left: 15px;
+  }
+  
+  .reset, .PlayO, .PlayX, .VsMinMax, .MinMaxVsAlphaBeta, .BestMove, .VsAlphaBeta, .HumanVsHuman {
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #1f3540;
+    font-size: 26px;
+    color: #26ffcb;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .board-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background: #1f3540;
+    border: 4px solid #0f1b21;
+    border-radius: 12px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #1f3540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0f1b21;
+    cursor: pointer;
+  }
+  
+  .tiger {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .dog {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .selected {
+    border: 2px solid red; /* Highlight selected piece */
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 20px;
+  }
+  
+  .slider-container {
+    width: 300px; /* Set a fixed width for the slider container */
+    background-color: #1f3540;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  .slider-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .slider-container input[type='range'] {
+    width: 100%;
+    cursor: pointer;
+    background: #26ffcb;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+  }
+  
+  .slider-container input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slider-container input[type='range']::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .piece-selection {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .piece-selection h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .piece-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .piece-button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #45a049;
+  }
+  
+  .piece-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .piece-button.selected:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .winner-message {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1f3540;
+  border-radius: 10px;
+  color: #26ffcb;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.winner-message h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.winner-message p {
+  font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

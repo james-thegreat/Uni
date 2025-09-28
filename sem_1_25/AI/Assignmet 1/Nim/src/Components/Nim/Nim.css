@@ -1,0 +1,135 @@
+/* Nim.css */
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span {
+    color: #26ffcb;
+    padding-left: 15px;
+}
+
+.reset, .VsMinMax, .VsAlphaBeta, .MinMaxVsAlphaBeta, .PlayO, .PlayX, .BestMove, .HumanVsHuman {
+    width: 250px;
+    height: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #1f3540;
+    font-size: 26px;
+    color: #26ffcb;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 20px; /* Add some space between buttons */
+}
+
+input[type='number'] {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #0f1b21;
+    border-radius: 10px;
+    background: #1f3540;
+    color: #26ffcb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.RightMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #26ffcb;
+    color: #1f3540;
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.sliders-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container {
+    width: 250px;
+    background-color: #1f3540;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #26ffcb;
+}
+
+.slider-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.slider-container input[type='range'] {
+    width: 100%;
+    cursor: pointer;
+    background: #26ffcb;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.slider-container input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-container input[type='range']::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pyramid-row {
+    font-size: 24px; /* Increase the font size for larger sticks */
+    color: white; /* Set the color to white */
+    text-align: center; /* Center the text */
+    margin: 5px 0; /* Add some margin between rows */
+}
